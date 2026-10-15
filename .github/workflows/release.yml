@@ -1,0 +1,16 @@
+name: Release
+
+on:
+  pull_request:
+    branches: [main]
+    types: [closed]
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true
+    permissions:
+      contents: write
+    uses: dduxx/buildscad-workflows/.github/workflows/release.yml@v1.0.2
+    with:
+      openscad: openscad-nightly
+      build_artifacts: true
