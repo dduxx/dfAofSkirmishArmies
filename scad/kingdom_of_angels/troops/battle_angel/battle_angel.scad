@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.0.0/scad/libs/creature.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/scad/libs/creature.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 WEAPON_LOADOUT = "default"; // [default:Default, great_weapon:Great Weapon, bow_and_heavy_hand_weapon:Bow and Heavy Hand Weapon]
@@ -84,8 +84,8 @@ build_humanoid_adult(
     wieldable_right_hand_z_offset = MAIN_HAND_XYZ[2],
 );
 
-left_wing_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.0.0/fixtures/character_models/animal_people/bird/crow_man_left_wing.json");
-right_wing_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.0.0/fixtures/character_models/animal_people/bird/crow_man_right_wing.json");
+left_wing_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/animal_people/bird/crow_man_left_wing.json");
+right_wing_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/animal_people/bird/crow_man_right_wing.json");
 
 translate([-19 * PIXEL_SCALE, -12 * PIXEL_SCALE, 0]) {
     multi_layer_two_point_five_d(
@@ -98,7 +98,7 @@ translate([-19 * PIXEL_SCALE, -12 * PIXEL_SCALE, 0]) {
 
 if (UPGRADE == "banner" || UPGRADE == "musician") {
     OFF_HAND_OBJ = UPGRADE == "banner" ? import("../../../../fixtures/custom_wieldables/banner_2.json") :
-        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.0.0/fixtures/objects/instruments/instrument_3.json");
+        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/objects/instruments/instrument_3.json");
 
     OFF_HAND_XYZ = UPGRADE == "banner" ? [-25, 0, 3] :
         [13, 7, 8];
