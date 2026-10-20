@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.0.0/scad/libs/creature.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/scad/libs/creature.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 VARIANT = 1; // [1, 2, 3]
@@ -77,8 +77,8 @@ build_humanoid_adult(
 
 if (UPGRADE != "none") {
     OFF_HAND_OBJ = UPGRADE == "banner" ? import("../../../../fixtures/custom_wieldables/banner_2.json") :
-        UPGRADE == "sergeant" ? import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.0.0/fixtures/character_models/wieldables/tall/adult_wieldables_shield_wood_left_hand.json") :
-        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.0.0/fixtures/objects/instruments/instrument_3.json");
+        UPGRADE == "sergeant" ? import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/wieldables/tall/adult_wieldables_shield_wood_left_hand.json") :
+        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/objects/instruments/instrument_3.json");
 
     OFF_HAND_XYZ = UPGRADE == "banner" ? [-25, 0, 3] :
         UPGRADE == "sergeant" ? [0, 0, 3] :
