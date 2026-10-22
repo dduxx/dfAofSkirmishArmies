@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/scad/libs/creature.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/creature.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 WEAPON_LOADOUT = "default"; //[default:Default, heavy_flail:Heavy Flail, heavy_halberd:Heavy Halberd]
@@ -94,7 +94,7 @@ difference() {
 
 if (MOUNT != "none") {
     mount_obj = MOUNT == "leopard" ?
-        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/creatures/surface/standard/leopard_adult.json") :
+        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/surface/standard/leopard_adult.json") :
         undef;
 
     MOUNT_TRANS = MOUNT == "leopard" ?

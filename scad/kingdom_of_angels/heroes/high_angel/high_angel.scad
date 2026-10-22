@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/scad/libs/creature.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/creature.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 WEAPON_LOADOUT = "default"; // [default:Default, heavy_ice_halberd:Heavy Ice Halberd, great_weapon:Great Weapon, heavy_flame_spear:Heavy Flame Spear, heavy_hand_weapon_and_bow:Heavy Hand Weapon and Bow]
@@ -85,8 +85,8 @@ build_humanoid_adult(
     wieldable_right_hand_z_offset = MAIN_HAND_XYZ[2],
 );
 
-left_wing_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/animal_people/bird/cardinal_man_left_wing.json");
-right_wing_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/animal_people/bird/cardinal_man_right_wing.json");
+left_wing_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/animal_people/bird/cardinal_man_left_wing.json");
+right_wing_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/animal_people/bird/cardinal_man_right_wing.json");
 
 translate([-18 * PIXEL_SCALE, -12 * PIXEL_SCALE, 0]) {
     multi_layer_two_point_five_d(

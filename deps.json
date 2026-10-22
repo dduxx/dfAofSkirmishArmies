@@ -1,6 +1,10 @@
 [
     {
         "url": "https://github.com/dduxx/dfCharacterBuilder.git",
-        "ref": "v2.2.0"
+        "ref": "v2.2.1"
+    },
+    {
+        "url": "https://github.com/dduxx/twoPointFiveD.git",
+        "ref": "v1.0.0"
     }
 ]

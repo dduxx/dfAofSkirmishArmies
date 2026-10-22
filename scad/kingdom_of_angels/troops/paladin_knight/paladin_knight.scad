@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/scad/libs/creature.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/creature.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 WEAPON_LOADOUT = "default"; // [default:Default, great_weapon:Great Weapon, blessed_greatsword:Blessed Greatsword]
@@ -94,8 +94,8 @@ difference() {
     }
 }
 
-mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/creatures/domestic/burden/horse.json");
-saddle_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/creatures/domestic/burden/horse_saddle_1.json");
+mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/domestic/burden/horse.json");
+saddle_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/domestic/burden/horse_saddle_1.json");
 
 translate([-5, -12, 0]) {
     multi_layer_two_point_five_d(
@@ -108,7 +108,7 @@ translate([-5, -12, 0]) {
 
 if (UPGRADE == "banner" || UPGRADE == "musician") {
     OFF_HAND_OBJ = UPGRADE == "banner" ? import("../../../../fixtures/custom_wieldables/banner_2.json") :
-        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/objects/instruments/instrument_3.json");
+        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/objects/instruments/instrument_3.json");
 
     OFF_HAND_XYZ = UPGRADE == "banner" ? [-25, 0, 3] :
         [13, 7, 10];
