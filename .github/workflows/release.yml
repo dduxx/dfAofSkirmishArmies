@@ -13,4 +13,4 @@ jobs:
     uses: dduxx/buildscad-workflows/.github/workflows/release.yml@v2.0.1
     with:
       openscad: openscad-nightly
-      artifacts: '[{"filter":"scad/kingdom_of_angels/*","name":"kingdom_of_angels"}]'
+      artifacts: '[{"filter":"scad/kingdom_of_angels/*","name":"kingdom_of_angels"},{"filter":"scad/saurians/*","name":"saurians"}]'

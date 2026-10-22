@@ -7,13 +7,13 @@ pixel-art using the dfCharacterBuilder and twoPointFiveD libraries.
 
 This project merges Dwarf Fortress's pixel-art character sprites with the unit rosters from
 One Page Rules' *Age of Fantasy Skirmish* game. Each unit is generated as a 2.5D model, a
-pixel grid extruded to different heights per color — so it can be 3D printed as a miniature. In
+pixel grid extruded to different heights per color, so it can be 3D printed as a miniature. In
 situations where Dwarf Fortress related sprites do not exist, a similiar equivalent of my own is
 added (ie Banners). Some units are created by kitbashing different sprites to make one combined
 model.
 
-Currently **Kingdom of Angels** is the only supported army but I intend to add more armies in the
-future.
+Currently **Kingdom of Angels** and **Saurians** are the supported armies but I intend to add more
+armies in the future.
 
 ## Prerequisites
 
@@ -69,6 +69,33 @@ then render and export to STL.
 | Frozen Angel | `WEAPON_LOADOUT`: default / ice_blade · `UPGRADE`: none / banner / musician / sergeant |
 | Scout Nun | — |
 
+### Saurians
+
+#### Heroes
+
+| Unit | Customizer options |
+|------|--------------------|
+| Frog Mage | — |
+| Gator Vetran | `WEAPON_LOADOUT`: default / great_weapon |
+| Gecko Champion | `WEAPON_LOADOUT`: default / dual_hand_weapons / lance · `ADDITIONAL_WEAPON`: none / champion_fire_bolas / champion_javelin / champion_blowpipe · `MOUNT`: none / deinonychus / pterodactyl / ripjawdactyl |
+| Saurian Vetran | `WEAPON_LOADOUT`: default / obsidian_great_weapon / heavy_halberd / great_weapon / dual_heavy_hand_weapons / heavy_lance / heavy_spear · `MOUNT`: none / raptor |
+
+#### Troops
+
+| Unit | Customizer options |
+|------|--------------------|
+| Chameleon | `WEAPON_LOADOUT`: default / blowpipe |
+| Deinonychus Rider | `WEAPON_LOADOUT`: default / javelin · `UPGRADE`: none / sergeant / musician / banner |
+| Gator | `WEAPON_LOADOUT`: default / great_weapon |
+| Geckos | `ADDITIONAL_WEAPON_UPGRADE`: none / javelin / blowpipe · `UPGRADE`: none / sergeant / musician / banner · `VARIANT`: 1–3 |
+| Pterodactyl Rider | `WEAPON_LOADOUT`: default / javelin / fire_bolas · `UPGRADE`: none / sergeant / musician / banner |
+| Raptor Rider | `WEAPON_LOADOUT`: default / lance · `UPGRADE`: none / sergeant / musician / banner |
+| Ripjawdactyl Rider | `WEAPON_LOADOUT`: default / javelin / fire_bolas · `UPGRADE`: none / sergeant / musician / banner |
+| Saurian Guardian | `WEAPON_LOADOUT`: default / halberd / great_weapon · `UPGRADE`: none / sergeant / musician / banner |
+| Saurian Warriors | `WEAPON_LOADOUT`: default / halberd / spear · `UPGRADE`: none / sergeant / musician / banner · `VARIANT`: 1–3 |
+| Snake Swarm | — |
+| Vulturedactyl | — |
+
 ## Project Structure
 
 ```
@@ -76,9 +103,12 @@ aofArmies/
 ├── buildscad.properties   # Project config + assembly list
 ├── deps.json             # Dependencies (dfCharacterBuilder, twoPointFiveD)
 ├── scad/
-│   └── kingdom_of_angels/
-│       ├── heroes/       # High Angel, Champion, Abbess
-│       └── troops/       # Infantry, angels, cavalry, nuns, and more
+│   ├── kingdom_of_angels/
+│   │   ├── heroes/       # High Angel, Champion, Abbess
+│   │   └── troops/       # Infantry, angels, cavalry, nuns, and more
+│   └── saurians/
+│       ├── heroes/       # Frog Mage, Gator Vetran, Gecko Champion, Saurian Vetran
+│       └── troops/       # Chameleon, Deinonychus Rider, Gator, Geckos, Pterodactyl Rider, Raptor Rider, Ripjawdactyl Rider, Saurian Guardian, Saurian Warriors, Snake Swarm, Vulturedactyl
 └── fixtures/
     └── custom_wieldables/ # Army-specific extras (banners)
 ```

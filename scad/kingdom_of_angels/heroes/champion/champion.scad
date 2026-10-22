@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/scad/libs/creature.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/creature.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 WEAPON_LOADOUT = "default"; // [default:Default, blessed_greatsword:Blessed Greatsword, heavy_halberd:Heavy Halberd, dual_heavy_hand_weapons:Dual Heavy Hand Weapons, heavy_lance:Heavy Lance, heavy_spear:Heavy Spear]
@@ -109,13 +109,13 @@ difference() {
 
 if (MOUNT != "none") {
     mount_obj = MOUNT == "horse" ?
-        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/creatures/domestic/burden/horse.json") :
-        MOUNT == "lion" ? import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/creatures/surface/gendered/lion_male.json") :
+        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/domestic/burden/horse.json") :
+        MOUNT == "lion" ? import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/surface/gendered/lion_male.json") :
         undef;
 
     saddle_obj = MOUNT == "horse" ?
-        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/creatures/domestic/burden/horse_saddle_1.json") :
-        MOUNT == "lion" ? import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/character_models/creatures/domestic/burden/water_buffalo_saddle_1.json") :
+        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/domestic/burden/horse_saddle_1.json") :
+        MOUNT == "lion" ? import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/domestic/burden/water_buffalo_saddle_1.json") :
         undef;
 
     MOUNT_TRANS = MOUNT == "horse" ?

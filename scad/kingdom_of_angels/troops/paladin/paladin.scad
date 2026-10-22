@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/scad/libs/creature.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/creature.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 WEAPON_LOADOUT = "default"; // [default:Default, blessed_greatsword:Blessed Greatsword]
@@ -81,7 +81,7 @@ build_humanoid_adult(
 
 if (UPGRADE == "banner" || UPGRADE == "musician") {
     OFF_HAND_OBJ = UPGRADE == "banner" ? import("../../../../fixtures/custom_wieldables/banner_2.json") :
-        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.0/fixtures/objects/instruments/instrument_3.json");
+        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/objects/instruments/instrument_3.json");
 
     OFF_HAND_XYZ = UPGRADE == "banner" ? [-25, 0, 3] :
         [13, 7, 8];
