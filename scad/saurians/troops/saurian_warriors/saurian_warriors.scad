@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/animal_people.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/scad/libs/animal_people.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 WEAPON_LOADOUT = "default"; // [default:Default, halberd:Halberd, spear:Spear]
@@ -62,7 +62,7 @@ build_animal_people_standard(
 
 if (UPGRADE == "banner" || UPGRADE == "musician") {
     OFF_HAND_OBJ = UPGRADE == "banner" ? import("../../../../fixtures/custom_wieldables/banner_worn_3.json") :
-        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/objects/instruments/instrument_9.json");
+        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/fixtures/objects/instruments/instrument_9.json");
 
     OFF_HAND_XYZ = UPGRADE == "banner" ? [-12, 16, OFF_HAND_OFFSET] :
         [25, 21, 8];

@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/animal_people.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/scad/libs/animal_people.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 WEAPON_LOADOUT = "default"; // [default:Default, javelin:Javelin]
@@ -53,7 +53,7 @@ build_animal_people_standard(
 
 if (UPGRADE == "banner" || UPGRADE == "musician") {
     OFF_HAND_OBJ = UPGRADE == "banner" ? import("../../../../fixtures/custom_wieldables/banner_worn_3.json") :
-        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/objects/instruments/instrument_9.json");
+        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/fixtures/objects/instruments/instrument_9.json");
 
     OFF_HAND_XYZ = UPGRADE == "banner" ? [-12, 16, OFF_HAND_OFFSET] :
         [25, 21, 11];
@@ -75,7 +75,7 @@ if (UPGRADE == "banner" || UPGRADE == "musician") {
     }
 }
 
-mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/extinct/cretaceous_nothronychus.json");
+mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/fixtures/character_models/creatures/extinct/cretaceous_nothronychus.json");
 translate([18, 28, 0]) {
     rotate([0, 0, 25]) {
         multi_layer_two_point_five_d(

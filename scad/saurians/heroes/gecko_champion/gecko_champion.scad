@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/animal_people.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/scad/libs/animal_people.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 include <../../../lib/extinct_creature_mod.scad>
 
@@ -70,7 +70,7 @@ scale([BODY_SCALE, BODY_SCALE, 1]) {
 }
 
 if (MOUNT == "deinonychus") {
-    mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/extinct/cretaceous_nothronychus.json");
+    mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/fixtures/character_models/creatures/extinct/cretaceous_nothronychus.json");
     translate([23, 31, 0]) {
         rotate([0, 0, 25]) {
             multi_layer_two_point_five_d(
@@ -82,7 +82,7 @@ if (MOUNT == "deinonychus") {
         }
     }
 } else if (MOUNT == "ripjawdactyl") {
-    mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/extinct/cretaceous_quetzalcoatlus.json");
+    mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/fixtures/character_models/creatures/extinct/cretaceous_quetzalcoatlus.json");
     translate([-2, -4, 0]) {
             multi_layer_two_point_five_d(
                 image_layers = [mount_obj],
