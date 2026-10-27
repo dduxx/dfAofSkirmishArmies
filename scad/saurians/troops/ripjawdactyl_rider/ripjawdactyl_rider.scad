@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/animal_people.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/scad/libs/animal_people.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 include <../../../lib/extinct_creature_mod.scad>
 
@@ -67,7 +67,7 @@ build_animal_people_standard(
 
 if (UPGRADE == "banner" || UPGRADE == "musician") {
     OFF_HAND_OBJ = UPGRADE == "banner" ? import("../../../../fixtures/custom_wieldables/banner_worn_3.json") :
-        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/objects/instruments/instrument_9.json");
+        import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/fixtures/objects/instruments/instrument_9.json");
 
     OFF_HAND_XYZ = UPGRADE == "banner" ? [-13, 16, OFF_HAND_OFFSET] :
         [25, 21, 12];
@@ -90,7 +90,7 @@ if (UPGRADE == "banner" || UPGRADE == "musician") {
 }
 
 translate([-8, -8, 0]) {
-    mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/extinct/cretaceous_quetzalcoatlus.json");
+    mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/fixtures/character_models/creatures/extinct/cretaceous_quetzalcoatlus.json");
     multi_layer_two_point_five_d(
         image_layers = [mount_obj],
         layer_offsets = [MOUNT_OFFSET],

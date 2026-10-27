@@ -2,7 +2,7 @@ include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 module __Customizer_Limit__ () {}
 
-PATH = "../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/extinct/jurassic_rhamphorhynchus.json";
+PATH = "../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/fixtures/character_models/creatures/extinct/jurassic_rhamphorhynchus.json";
 
 body_obj = import(PATH);
 

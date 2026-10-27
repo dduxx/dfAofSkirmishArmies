@@ -12,8 +12,8 @@ situations where Dwarf Fortress related sprites do not exist, a similiar equival
 added (ie Banners). Some units are created by kitbashing different sprites to make one combined
 model.
 
-Currently **Kingdom of Angels** and **Saurians** are the supported armies but I intend to add more
-armies in the future.
+Currently **Kingdom of Angels** and **Saurians** are the supported armies but I intend
+to add more armies in the future.
 
 ## Prerequisites
 
@@ -106,9 +106,9 @@ aofArmies/
 │   ├── kingdom_of_angels/
 │   │   ├── heroes/       # High Angel, Champion, Abbess
 │   │   └── troops/       # Infantry, angels, cavalry, nuns, and more
-│   └── saurians/
-│       ├── heroes/       # Frog Mage, Gator Vetran, Gecko Champion, Saurian Vetran
-│       └── troops/       # Chameleon, Deinonychus Rider, Gator, Geckos, Pterodactyl Rider, Raptor Rider, Ripjawdactyl Rider, Saurian Guardian, Saurian Warriors, Snake Swarm, Vulturedactyl
+│   ├── saurians/
+│   │   ├── heroes/       # Frog Mage, Gator Vetran, Gecko Champion, Saurian Vetran
+│   │   └── troops/       # Chameleon, Deinonychus Rider, Gator, Geckos, Pterodactyl Rider, Raptor Rider, Ripjawdactyl Rider, Saurian Guardian, Saurian Warriors, Snake Swarm, Vulturedactyl
 └── fixtures/
     └── custom_wieldables/ # Army-specific extras (banners)
 ```

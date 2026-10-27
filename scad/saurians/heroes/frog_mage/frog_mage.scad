@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/animal_people.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/scad/libs/animal_people.scad>
 
 module __Customizer_Limit__ () {}
 

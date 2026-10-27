@@ -1,4 +1,4 @@
-include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/animal_people.scad>
+include <../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/scad/libs/animal_people.scad>
 include <../../../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 WEAPON_LOADOUT = "default"; // [default:Default, obsidian_great_weapon:Obsidian Great Weapon, heavy_halberd:Heavy Halberd, great_weapon:Great Weapon, dual_heavy_hand_weapons:Dual Heavy Hand Weapons, heavy_lance:Heavy Lance, heavy_spear:Heavy Spear]
@@ -68,7 +68,7 @@ scale([BODY_SCALE, BODY_SCALE, 1]) {
 }
 
 if (MOUNT == "raptor") {
-    mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/extinct/cretaceous_utahraptor.json");
+    mount_obj = import("../../../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/fixtures/character_models/creatures/extinct/cretaceous_utahraptor.json");
     translate([-10, 0, 0]) {
         multi_layer_two_point_five_d(
             image_layers = [mount_obj],

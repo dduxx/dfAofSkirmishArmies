@@ -1,8 +1,8 @@
-include <../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/scad/libs/animal_people.scad>
+include <../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/scad/libs/animal_people.scad>
 include <../../dependencies/dduxx:twoPointFiveD:v1.0.0/scad/main.scad>
 
 module hornless_quetzalcoatlus(pixel_size = 1, z_offset=1, z_pixel_diff = 10) {
-    mount_obj = import("../../dependencies/dduxx:dfCharacterBuilder:v2.2.1/fixtures/character_models/creatures/extinct/cretaceous_quetzalcoatlus.json");
+    mount_obj = import("../../dependencies/dduxx:dfCharacterBuilder:v2.3.0/fixtures/character_models/creatures/extinct/cretaceous_quetzalcoatlus.json");
 
     difference() {
         multi_layer_two_point_five_d(
